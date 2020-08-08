@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import {ToolbarComponent} from './toolbar/toolbar.component';
+
+const routes: Routes = [
+  { path: 'toolbar', component: ToolbarComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

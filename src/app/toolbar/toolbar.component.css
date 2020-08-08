@@ -1,0 +1,7 @@
+.fill-center {
+    flex: 1 1 auto;
+  }
+
+ .position-center {
+    margin: auto;
+}
