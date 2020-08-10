@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { ButtonsComponent } from './buttons/buttons.component';
+import { FormsComponent } from './forms/forms.component';
 
 
 
@@ -16,12 +18,14 @@ import { ButtonsComponent } from './buttons/buttons.component';
     AppComponent,
     ToolbarComponent,
     SidenavComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,    
+    ReactiveFormsModule,
     SharedModule
   ],
   providers: [],

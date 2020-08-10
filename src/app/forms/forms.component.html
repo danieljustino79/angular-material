@@ -1,0 +1,38 @@
+Appearance fill
+<div class="example-container">
+    <mat-form-field appearance="fill">
+      <mat-label>Input</mat-label>
+      <input matInput>
+    </mat-form-field>    
+    <br>
+    <mat-form-field appearance="fill">
+      <mat-label>Textarea</mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+</div>
+
+<br>
+Appearance outline
+<div class="example-container">
+    <mat-form-field appearance="outline">
+      <mat-label>Input</mat-label>
+      <input matInput>
+    </mat-form-field>    
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Textarea</mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+</div>
+
+
+<br>
+Validate
+<div class="example-container">
+    <mat-form-field >
+      <mat-label>Enter your email</mat-label>
+      <input matInput placeholder="pat@example.com" [formControl]="email" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+  </div>
+  
